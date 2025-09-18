@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radhey Smart Interiors</title>
+    <link rel="stylesheet" href="Image.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="Gallery of Radhey Smart Interiors - View our portfolio of custom interior design solutions">
+    <meta name="keywords"
+        content="interior design gallery, interior portfolio, custom interiors, Radhey Smart Interiors">
+    <link rel="icon" href="assets/favicon/favicon_new.png" type="image/png">
+</head>
+
+<body>
+    <hr>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="assets/Logo.png" alt="Logo"></a>
+                <div class="logo-text">
+                    <span>RADHEY</span>
+                    <span>SMART</span>
+                    <span>INTERIORS</span>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+                <a href="index.html" class="cta-button">Get a Quote</a>
+                <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+
+                <!-- Hamburger Menu Button -->
+                <div class="hamburger" id="hamburgerMenu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Your Dream Interior Awaits</h1>
+            <p>We create spaces that inspire and transform your lifestyle.</p>
+            <a href="index.html" class="cta-button">Get Started</a>
+        </div>
+    </section>
+    <div style="height: 0vh;"></div>
+    <div class="head">
+        <h2 style="font-family: 'Times New Roman', Times, serif; font-size:50px; text-align: center;">Our
+            Gallery</h2>
+    </div>
+    <div class="gallery" id="imageGallery"></div>
+
+    <!-- Modal for full-screen image view -->
+    <div id="imageModal">
+        <div id="modalContent">
+            <button id="closeBtn" class="close-btn">x</button>
+
+            <!-- Previous and Next buttons -->
+            <button id="prevBtn" class="nav-btn">❮</button>
+            <img id="modalImage" src="./assets//Images/Image (1).jpg" alt="Gallery image">
+            <button id="nextBtn" class="nav-btn">❯</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>RADHEY SMART INTERIORS</h3>
+                    <p>Transforming spaces, transforming lives.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> +917019565765</p>
+                    <p><i class="fas fa-envelope"></i>sales@radheysmartinteriors.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect with Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/rooparam.devashi" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/+917019565765" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Radhey Smart Interiors | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script1.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Radhey Smart Interiors offers a wide range of high-quality, customized, and imported smart interior solutions. We specialize in modern home and office interior designs, providing personalized, cutting-edge solutions to suit your needs. With secure and fast payments through cryptocurrency, enjoy a seamless experience from consultation to installation. Stay updated with daily transaction reports and track your progress with ease. Explore our innovative designs today and transform your space!">
+    <meta name="keywords"
+        content="interior design, customized interior solutions, home interiors, office interiors, modern interior design, bespoke furniture, imported furniture, custom sofas, custom beds, dining tables, high-quality interiors, modern office design, Radhey Smart Interiors, furniture design and installation, bespoke furniture design">
+    <meta property="og:title" content="Radhey Smart Interiors - Custom Interior Design Solutions">
+    <meta property="og:description"
+        content="Discover Radhey Smart Interiors, your go-to source for modern, customized interior design solutions for homes and offices. Bespoke furniture, expert installations.">
+    <meta property="og:image" content="https://radheysmartinteriors.com/assets/Logo.png">
+    <meta property="og:url" content="https://radheysmartinteriors.com/">
+    <meta property="og:type" content="website">
+
+    <title>Radhey Smart Interiors | Custom Smart Interior Solutions</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&family=Nunito:wght@200..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="assets/favicon/favicon_new.png" type="image/png">
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Radhey Smart Interiors",
+        "image": "https://radheysmartinteriors.com/assets/Logo.png",
+        "url": "https://radheysmartinteriors.com/",
+        "telephone": "+917019565765",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Babusapaliya,Bangalore",
+            "addressRegion": "Karnataka",
+            "postalCode": "560043",
+            "addressCountry": "India"
+        },
+        "description": "Radhey Smart Interiors offers a wide range of high-quality, customized, and imported interior design solutions. We specialize in modern home and office interior designs, providing personalized, cutting-edge solutions to suit your needs.",
+        "sameAs": [
+            "https://www.facebook.com/profile.php?id=61570703465569",
+            "https://wa.me/+917019565765",
+            "https://www.instagram.com/radheysmartinteriors/?igsh=MWU1Y2RjdDVrNHRkZw%3D%3D",
+            "https://radheysmartinteriors.com/#about",
+            "https://radheysmartinteriors.com/#services"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+917019565765",
+            "contactType": "Customer Service",
+            "areaServed": "IN",
+            "availableLanguage": ["Hindi", "English"],
+            "url": "https://radheysmartinteriors.com/#contact"
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="assets/Logo.png" alt="Radhey Smart Interiors Logo"></a>
+                <div class="logo-text">
+                    <span>RADHEY</span>
+                    <span>SMART</span>
+                    <span>INTERIORS</span>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="Image.html">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+                <div class="hamburger" id="hamburgerMenu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero hero-background">
+            <div class="container">
+                <h1>Your Dream Interior Awaits</h1>
+                <p>We create spaces that inspire and transform your lifestyle.</p>
+                <a href="#contact" class="cta-button">Get Quote</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>At Radhey Smart Interiors, we believe in creating timeless and functional spaces that elevate your
+                    lifestyle. With a team of expert designers, we provide tailored interior solutions to meet your
+                    unique needs.</p>
+                <p class="highlight">From design to installation, we ensure a seamless experience for you.</p>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2>Our Gallery</h2>
+                <div class="gallery-grid">
+                    <!-- Add your gallery items here -->
+                    <div class="gallery-item">
+                        <img src="./assets/Images/Image (219).jpg" alt="Interior Design 1">
+                        <div class="gallery-overlay">
+                            <a href="./assets/Images/Image (219).jpg">View Full Image</a>
+                        </div>
+                    </div>
+                    <!-- Add more gallery items as needed -->
+                </div>
+                <div class="btn1">
+                    <a href="Image.html" class="cta-button">Visit Our Gallery</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="social-links" class="social-links-section">
+            <div class="container">
+                <h3>Visit Our Pages</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61570703465569" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="assets/facebook.svg" alt="Facebook" />
+                    </a>
+                    <a href="https://www.instagram.com/radheysmartinteriors/?igsh=MWU1Y2RjdDVrNHRkZw%3D%3D"
+                        target="_blank" rel="noopener noreferrer">
+                        <img src="assets/instagram.svg" alt="Instagram" />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="map-section" class="map-section">
+            <div class="container">
+                <h2>Our Location</h2>
+                <div id="map" class="map-container"></div>
+                <p class="map-link">
+                    <a href="https://www.google.com/maps/place/86,+4th+Cross+Rd,+Mallappa+Layout,+Hennur+Gardens,+Bengaluru,+Karnataka+560043/@13.0276673,77.6500262,17.33z/data=!4m6!3m5!1s0x3bae1732896c64cf:0xeb48a143db8f5876!8m2!3d13.0274442!4d77.65108!16s%2Fg%2F11h8d44zfp?entry=ttu&g_ep=EgoyMDI1MDEwMS4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank" rel="noopener noreferrer">
+                        View on Google Maps
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <p>We provide A-Z service, from design to installation, ensuring a seamless experience for you.</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-bed"></i>
+                        <h3>Bedroom Design</h3>
+                        <p>Customized bedroom designs for ultimate comfort and relaxation.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-arrows-alt"></i>
+                        <h3>Space Saving Furniture</h3>
+                        <p>Furniture solutions that help you optimize space in small apartments.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-tv"></i>
+                        <h3>TV Units</h3>
+                        <p>Custom TV units designed to blend with your living room style.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-pencil-ruler"></i>
+                        <h3>Study Tables</h3>
+                        <p>Functional study tables to create a perfect learning space.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-cogs"></i>
+                        <h3>False Ceiling</h3>
+                        <p>Elegant false ceiling designs to enhance your room's ambiance.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Lights</h3>
+                        <p>Lighting solutions to brighten your home with style.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-couch"></i>
+                        <h3>Sofa Sets</h3>
+                        <p>Customized sofa sets designed to match your living room decor.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-door-open"></i>
+                        <h3>Entrance Doors</h3>
+                        <p>Stylish entrance doors to create a lasting impression.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-window-maximize"></i>
+                        <h3>Windows</h3>
+                        <p>Customized windows to bring in natural light and ventilation.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-bath"></i>
+                        <h3>Bathroom Design</h3>
+                        <p>Functional bathroom designs for a relaxing experience.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-palette"></i>
+                        <h3>Wall Painting</h3>
+                        <p>Expert wall painting services to enhance your home's aesthetic.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-cabinet"></i>
+                        <h3>Modular Kitchen</h3>
+                        <p>Customized modular kitchen designs for efficient cooking.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-couch"></i>
+                        <h3>Living Room Design</h3>
+                        <p>Stylish living room designs to create a warm and inviting atmosphere.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-drafting-compass"></i>
+                        <h3>Interior Decoration</h3>
+                        <p>Expert interior decoration services to transform your space.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Home Automation</h3>
+                        <p>Smart home automation solutions for a convenient lifestyle.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-fireplace"></i>
+                        <h3>Fireplace Design</h3>
+                        <p>Customized fireplace designs to create a cozy ambiance.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-sink"></i>
+                        <h3>Kitchen Countertops</h3>
+                        <p>Stylish kitchen countertops to enhance your cooking experience.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-cabinet"></i>
+                        <h3>Wardrobe Design</h3>
+                        <p>Customized wardrobe designs to optimize your storage space.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-couch"></i>
+                        <h3>Dining Room Design</h3>
+                        <p>Stylish dining room designs to create a warm and inviting atmosphere.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Smart Home Security</h3>
+                        <p>Advanced smart home security solutions for a safe and secure lifestyle.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-palette"></i>
+                        <h3>Flooring Solutions</h3>
+                        <p>Expert flooring solutions to enhance your home's aesthetic.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-cabinet"></i>
+                        <h3>Storage Solutions</h3>
+                        <p>Customized storage solutions to optimize your space.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-couch"></i>
+                        <h3>Outdoor Furniture</h3>
+                        <p>Stylish outdoor furniture to create a warm and inviting outdoor space.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Home Theater Design</h3>
+                        <p>Customized home theater designs to create an immersive entertainment experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <h2>Our Pricing</h2>
+                <div class="pricing-card">
+                    <h3>Customized Pricing Plans</h3>
+                    <p>We offer flexible pricing plans tailored to your specific needs.</p>
+                    <p class="note">Note: These are just nearly Estimations</p>
+                    <ul class="pricing-list">
+                        <li><span>Basic Interior Works (1-2 rooms)</span><span>Starting From ₹1000</span></li>
+                        <li><span>Standard Interior Works (3-5 rooms)</span><span>Starting From ₹3000</span></li>
+                        <li><span>Premium Interior Works (6-10 rooms)</span><span>Starting From ₹5000</span></li>
+                        <li><span>Full Home Interior Works (11+ rooms)</span><span>Starting From ₹10,000</span></li>
+                        <li><span>Custom Interior Works (variable rooms)</span><span>May Vary based On the
+                                requirements</span></li>
+                    </ul>
+                    <div class="lastquote"><a href="#contact" class="cta-button">Get a Quote</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contactForm" class="contact-form" action="send_email.php" method="post">
+                    <div class="form-group">
+                        <input type="text" id="firstName" name="firstName" required placeholder="First Name">
+                        <input type="text" id="lastName" name="lastName" required placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phoneNumber" name="phoneNumber" required placeholder="Phone Number"
+                            pattern="[0-9]{10}" maxlength="10" title="Please enter a 10-digit phone number"
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                        <input type="email" id="email" name="email" required placeholder="Email"
+                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                            title="Please enter a valid email address">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="cityName" name="cityName" required placeholder="City Name"
+                            title="Enter a valid city name">
+                        <input type="text" id="office" name="office" required placeholder="Office/Home Address">
+                    </div>
+                    <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                    <p class="note">Note: All fields are required to fill.</p>
+                    <div class="social-submit">
+                        <button type="button" class="whatsapp-button">
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                        <button type="button" class="facebook-button">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                        <button style="color: #333; cursor : not-allowed;" type="submit" class="submit-button"
+                            disabled="disabled">
+                            <i class="fas fa-envelope"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="typing-animation">RADHEY SMART INTERIORS</h3>
+                    <p>Transforming spaces, transforming lives.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="Image.html">Gallery</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> +917019565765</p>
+                    <p><i class="fas fa-envelope"></i> info@radheysmartinteriors.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect with Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61570703465569" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/+917019565765" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/radheysmartinteriors/?igsh=MWU1Y2RjdDVrNHRkZw%3D%3D"
+                            target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://jsdl.in/DT-15JY4L4KBE5" target="_blank" rel="noopener noreferrer"
+                            aria-label="Visit us on JustDial"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Radhey Smart Interiors | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Function to show alert based on URL parameters
+        function showAlert() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('success')) {
+                alert('Email sent successfully!');
+            } else if (urlParams.has('error')) {
+                alert('There was an error sending your email. Please try again.');
+            }
+        }
+        // Call the function when the page loads
+        window.onload = showAlert;
+
+        // Map initialization
+        function initMap() {
+            const mapConfig = {
+                coords: [13.0274499, 77.6510631],
+                zoom: 17,
+                title: 'Radhey Smart Interiors',
+                address: 'Babusapalya, Bangalore, Karnataka 560043'
+            };
+
+            const map = L.map('map', {
+                center: mapConfig.coords,
+                zoom: mapConfig.zoom,
+                scrollWheelZoom: false
+            });
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                maxZoom: 19,
+                minZoom: 10
+            }).addTo(map);
+
+            const marker = L.marker(mapConfig.coords).addTo(map)
+                .bindPopup(`
+                    <div class="map-popup">
+                        <h4>${mapConfig.title}</h4>
+                        <p>${mapConfig.address}</p>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=${mapConfig.coords[0]},${mapConfig.coords[1]}" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                           Get Directions
+                        </a>
+                    </div>
+                `)
+                .openPopup();
+
+            map.on('click', () => {
+                map.scrollWheelZoom.enable();
+            });
+
+            map.on('mouseout', () => {
+                map.scrollWheelZoom.disable();
+            });
+        }
+
+        // Call the map initialization function when the page loads
+        window.addEventListener('load', initMap);
+    </script>
+</body>
+
+</html>
